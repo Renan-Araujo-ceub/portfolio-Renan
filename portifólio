@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Renan Felix</title>
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS a partir de um CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para rolagem suave */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navegação e Cabeçalho -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                &lt;MeuPortfólio&gt;
+            </a>
+            <ul class="flex space-x-6">
+                <li><a href="#sobre" class="text-gray-600 hover:text-blue-600 transition-colors">Sobre</a></li>
+                <li><a href="#projetos" class="text-gray-600 hover:text-blue-600 transition-colors">Projetos</a></li>
+                <li><a href="#habilidades" class="text-gray-600 hover:text-blue-600 transition-colors">Habilidades</a></li>
+                <li><a href="#contato" class="text-gray-600 hover:text-blue-600 transition-colors">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero (Introdução) -->
+        <section id="hero" class="bg-blue-600 text-white py-20 md:py-32 rounded-b-3xl">
+            <div class="container mx-auto px-4 text-center">
+                <div class="animate-fadeIn">
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                        Olá, eu sou <span class="text-yellow-300">Renan Felix</span>.
+                    </h1>
+                    <p class="mt-4 text-xl md:text-2xl font-light">
+                        Desenvolvedor Web Front-end com paixão por criar experiências de usuário incríveis.
+                    </p>
+                    <a href="#projetos" class="mt-8 inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-gray-200 transition-colors">
+                        Veja meu trabalho
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-lg border-l-4 border-blue-600">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sobre Mim</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Sou um desenvolvedor web autodidata com 2 anos de experiência em JavaScript, React e Node.js. Meu foco é construir aplicações robustas, escaláveis e com interfaces intuitivas. Sou apaixonado por resolver problemas complexos e aprender novas tecnologias. No meu tempo livre, gosto de contribuir para projetos de código aberto e explorar novas ferramentas de desenvolvimento.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="projetos" class="bg-gray-200 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">Meus Projetos</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Cartão de Projeto 1 -->
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/3B82F6/ffffff?text=Robo+Envio+Automatico" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Robô de Envio Automático de Mensagens</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Desenvolvi um robô para automatizar o envio de mensagens em massa, otimizando campanhas de marketing e comunicação com clientes de forma eficiente e escalável.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+                                    GitHub →
+                                </a>
+                                <a href="#" target="_blank" class="text-gray-500 hover:text-gray-700 text-sm">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cartão de Projeto 2 -->
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/10B981/ffffff?text=Robo+Comercio" alt="Imagem do Projeto 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Sistema de Gestão para Comércio Local</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Um sistema completo para gerenciamento de pequenos negócios, controlando estoque, registro de clientes e histórico de compras para análise de dados e tomada de decisões.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Banco de Dados</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/seu-usuario/projeto-2" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+                                    GitHub →
+                                </a>
+                                <a href="#" target="_blank" class="text-gray-500 hover:text-gray-700 text-sm">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cartão de Projeto 3 -->
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/F59E0B/ffffff?text=Robo+Agendamento" alt="Imagem do Projeto 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Robô de Agendamento Inteligente</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Um bot projetado para simplificar o agendamento de compromissos. Ele gerencia horários, envia lembretes automáticos e integra-se com calendários para uma organização impecável.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Integração API</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/seu-usuario/projeto-3" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+                                    GitHub →
+                                </a>
+                                <a href="#" target="_blank" class="text-gray-500 hover:text-gray-700 text-sm">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Habilidades -->
+        <section id="habilidades" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">Minhas Habilidades</h2>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <!-- Habilidade 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">🐍</span>
+                        <p class="text-lg font-semibold">Python</p>
+                    </div>
+                    <!-- Habilidade 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">🛠️</span>
+                        <p class="text-lg font-semibold">C++</p>
+                    </div>
+                    <!-- Habilidade 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">⚙️</span>
+                        <p class="text-lg font-semibold">C</p>
+                    </div>
+                    <!-- Habilidade 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">💻</span>
+                        <p class="text-lg font-semibold">JavaScript</p>
+                    </div>
+                    <!-- Habilidade 5 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">⚛️</span>
+                        <p class="text-lg font-semibold">React</p>
+                    </div>
+                    <!-- Habilidade 6 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">🔧</span>
+                        <p class="text-lg font-semibold">Node.js</p>
+                    </div>
+                    <!-- Habilidade 7 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">🌐</span>
+                        <p class="text-lg font-semibold">HTML & CSS</p>
+                    </div>
+                    <!-- Habilidade 8 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-110 transition-transform duration-200">
+                        <span class="text-4xl mb-2">🎨</span>
+                        <p class="text-lg font-semibold">UI/UX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="bg-blue-600 text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em contato comigo!</h2>
+                <p class="text-lg md:text-xl font-light mb-8">
+                    Estou sempre aberto a novas oportunidades e colaborações.
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="mailto:seu.email@exemplo.com" class="bg-white text-blue-600 py-3 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition-colors">
+                        E-mail
+                    </a>
+                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="bg-white text-blue-600 py-3 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition-colors">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/seu-usuario" target="_blank" class="bg-white text-blue-600 py-3 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition-colors">
+                        GitHub
+                    </a>
+                </div>
+                
+                <!-- Formulário de Contato - Apenas UI/UX. Precisa de um backend para funcionar. -->
+                <div class="max-w-xl mx-auto bg-blue-700 p-8 rounded-3xl shadow-lg">
+                    <form action="#" method="post">
+                        <div class="mb-4 text-left">
+                            <label for="name" class="block text-sm font-medium mb-1">Nome</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div class="mb-4 text-left">
+                            <label for="email" class="block text-sm font-medium mb-1">E-mail</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div class="mb-4 text-left">
+                            <label for="message" class="block text-sm font-medium mb-1">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" class="w-full p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-300 text-blue-800 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-400 transition-colors">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-300 py-8 text-center rounded-t-3xl">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Renan Felix. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
