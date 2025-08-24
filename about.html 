@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Sobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-400">Meu Portfólio</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Início</a>
+                <a href="about.html" class="text-white font-semibold transition duration-300">Sobre</a>
+                <a href="projects.html" class="text-gray-300 hover:text-white transition duration-300">Projetos</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contato</a>
+            </div>
+            <!-- Botão do menu mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 pb-4">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Início</a>
+                <a href="about.html" class="block py-2 text-white font-semibold border-b border-gray-700">Sobre</a>
+                <a href="projects.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Projetos</a>
+                <a href="contact.html" class="block py-2 text-gray-300 hover:text-white">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-4xl sm:text-5xl font-bold text-center mb-12 text-teal-400">Sobre Mim</h1>
+
+        <!-- Seção de perfil -->
+        <div class="bg-gray-800 rounded-lg shadow-xl p-8 md:p-12 mb-12 flex flex-col md:flex-row items-center md:items-start gap-8">
+            <img src="https://placehold.co/200x200/4b5563/d1d5db?text=Sua+Foto" alt="Sua Foto de Perfil" class="w-48 h-48 rounded-full object-cover border-4 border-teal-500 shadow-lg">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-white mb-4">Desenvolvedor Full-Stack</h2>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    Olá! Sou um desenvolvedor apaixonado por tecnologia e inovação, com [X] anos de experiência em construir e manter aplicações web. Minha jornada começou com a curiosidade sobre como a web funciona e evoluiu para uma paixão por criar experiências de usuário intuitivas e eficientes.
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    Trabalho com tecnologias front-end e back-end, sempre buscando as melhores práticas e soluções para os desafios do dia a dia. Acredito que o aprendizado contínuo é a chave para o sucesso no mundo da programação.
+                </p>
+            </div>
+        </div>
+
+        <!-- Seção de habilidades -->
+        <div class="bg-gray-800 rounded-lg shadow-xl p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Minhas Habilidades</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML5" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">HTML5</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">CSS3</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">JavaScript</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="React" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">React</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2324/2324424.png" alt="Node.js" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">Node.js</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5890/5890526.png" alt="Python" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">Python</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="SQL" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">SQL</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git" class="w-16 h-16 mx-auto mb-2 invert">
+                    <p class="text-gray-300">Git</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-500">
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="hover:text-white transition duration-300">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-6 h-6 invert">
+            </a>
+            <a href="#" class="hover:text-white transition duration-300">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6 invert">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

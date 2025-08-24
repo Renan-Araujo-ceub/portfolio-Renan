@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-400">Meu Portfólio</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Início</a>
+                <a href="about.html" class="text-gray-300 hover:text-white transition duration-300">Sobre</a>
+                <a href="projects.html" class="text-white font-semibold transition duration-300">Projetos</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contato</a>
+            </div>
+            <!-- Botão do menu mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 pb-4">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Início</a>
+                <a href="about.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Sobre</a>
+                <a href="projects.html" class="block py-2 text-white font-semibold border-b border-gray-700">Projetos</a>
+                <a href="contact.html" class="block py-2 text-gray-300 hover:text-white">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-4xl sm:text-5xl font-bold text-center mb-12 text-teal-400">Meus Projetos</h1>
+
+        <!-- Grid de projetos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Projeto 1 -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Projeto+A" alt="Imagem do Projeto A" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-white mb-2">Nome do Projeto A</h2>
+                    <p class="text-gray-400 mb-4">Breve descrição do projeto. Tecnologias utilizadas: React, Node.js, MongoDB.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 font-semibold">Ver no GitHub</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Projeto+B" alt="Imagem do Projeto B" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-white mb-2">Nome do Projeto B</h2>
+                    <p class="text-gray-400 mb-4">Breve descrição do projeto. Tecnologias utilizadas: Python, Django, PostgreSQL.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 font-semibold">Ver no GitHub</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Projeto+C" alt="Imagem do Projeto C" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-white mb-2">Nome do Projeto C</h2>
+                    <p class="text-gray-400 mb-4">Breve descrição do projeto. Tecnologias utilizadas: C#, .NET, SQL Server.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 font-semibold">Ver no GitHub</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-500">
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="hover:text-white transition duration-300">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-6 h-6 invert">
+            </a>
+            <a href="#" class="hover:text-white transition duration-300">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6 invert">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

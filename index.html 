@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Início</title>
+    <!-- Inclui o Tailwind CSS via CDN para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-400">Meu Portfólio</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Início</a>
+                <a href="about.html" class="text-gray-300 hover:text-white transition duration-300">Sobre</a>
+                <a href="projects.html" class="text-gray-300 hover:text-white transition duration-300">Projetos</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contato</a>
+            </div>
+            <!-- Botão do menu mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu mobile (inicialmente escondido) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 pb-4 transition-all duration-300 ease-in-out">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Início</a>
+                <a href="about.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Sobre</a>
+                <a href="projects.html" class="block py-2 text-gray-300 hover:text-white border-b border-gray-700">Projetos</a>
+                <a href="contact.html" class="block py-2 text-gray-300 hover:text-white">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero Section) -->
+    <main class="container mx-auto px-6 py-20 flex flex-col items-center text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">Olá, eu sou [Seu Nome]</h1>
+        <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mb-8 animate-fade-in-delay">
+            Desenvolvedor Full-Stack especializado em criar aplicações web robustas e escaláveis. Explorador de novas tecnologias e apaixonado por resolver problemas complexos.
+        </p>
+        <a href="projects.html" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 animate-fade-in-delay-2">
+            Ver meus projetos
+        </a>
+    </main>
+
+    <!-- Seção de Destaque -->
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">Projetos em Destaque</h2>
+            <!-- Placeholder para cards de projeto -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card de Projeto 1 -->
+                <div class="bg-gray-700 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Projeto+1" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Projeto A</h3>
+                        <p class="text-gray-400 mb-4">Uma breve descrição do projeto. Fale sobre as tecnologias usadas e o problema que ele resolveu.</p>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 font-semibold">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+                <!-- Card de Projeto 2 -->
+                <div class="bg-gray-700 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Projeto+2" alt="Imagem do Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Projeto B</h3>
+                        <p class="text-gray-400 mb-4">Outra breve descrição do projeto. Destaque os desafios e as soluções implementadas.</p>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 font-semibold">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+                <!-- Card de Projeto 3 -->
+                <div class="bg-gray-700 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Projeto+3" alt="Imagem do Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Projeto C</h3>
+                        <p class="text-gray-400 mb-4">Detalhes sobre este terceiro projeto. Inclua a sua contribuição e os resultados alcançados.</p>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 font-semibold">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <a href="projects.html" class="mt-10 inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">
+                Ver todos os projetos
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-500">
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <!-- Ícones de redes sociais - substitua com seus links -->
+            <a href="#" class="hover:text-white transition duration-300">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-6 h-6 invert">
+            </a>
+            <a href="#" class="hover:text-white transition duration-300">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6 invert">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script JS para funcionalidades interativas -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

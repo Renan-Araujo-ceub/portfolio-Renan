@@ -1,0 +1,26 @@
+// Seleciona o botão e o menu mobile
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+// Adiciona um listener de clique ao botão do menu
+mobileMenuButton.addEventListener('click', () => {
+    // Alterna a classe 'hidden' para mostrar/esconder o menu
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Outras funcionalidades JavaScript podem ser adicionadas aqui.
+// Por exemplo, validação de formulário, animações de scroll, etc.
+
+// Exemplo de animação simples para a hero section
+window.addEventListener('DOMContentLoaded', () => {
+    const heroContent = document.querySelector('main > h1, main > p, main > a');
+    heroContent.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, index * 200); // Atraso para cada elemento
+    });
+});
